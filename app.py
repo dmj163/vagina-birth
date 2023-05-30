@@ -28,7 +28,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 @st.cache
 def predict_quality(model, df):
     y_pred = model.predict_proba(df)
-    return y_pred[:, 1]
+    return y_pred[:, 0]
 
 
 def option_name1(x):
