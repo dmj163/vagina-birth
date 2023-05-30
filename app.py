@@ -89,5 +89,5 @@ st.table(features_df)
 # 显示预测结果与shap解释图
 if st.button('Predict'):
     prediction = predict_quality(model, features_df)
-    st.write("the probability of mortality:")
+    st.write("the probability of vaginal birth after cearean section:")
     st.success(round(prediction[0], 3))
