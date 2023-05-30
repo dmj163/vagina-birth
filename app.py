@@ -54,7 +54,7 @@ st.sidebar.title("Features")
 EDUC = st.sidebar.selectbox(label='Education level', options=[1, 2, 3, 4, 5, 6],
                                      format_func=lambda x: option_name1(x), index=0)
 
-PREBMI = st.sidebar.slider(label='BMI', min_value=1.00,
+PREBMI = st.sidebar.number_input(label='BMI', min_value=1.00,
                         max_value=100.00,
                         value=24.00,
                         step=0.01)
@@ -71,7 +71,7 @@ BISHOP = st.sidebar.number_input(label='BISHOP', min_value=1.0,
 
 EFW = st.sidebar.number_input(label='EFW', min_value=0,
                               max_value=5000,
-                              value=100,
+                              value=3000,
                               step=10)
 
 
