@@ -46,7 +46,7 @@ def option_name1(x):
         return 'postgraduate'
 
 # 导入模型
-model = joblib.load('save/cb5.pkl')
+model = joblib.load('cb5.pkl')
 
 st.sidebar.title("Features")
 
