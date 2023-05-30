@@ -79,7 +79,7 @@ features = {'EDUC': EDUC,
             'PREBMI': PREBMI,
             'Interval of pregnancy': Interval_of_pregnancy,
             'BISHOP': BISHOP,
-            'EFW': EFW,
+            'CHILWEI': EFW,
             }
 
 features_df = pd.DataFrame([features])
