@@ -64,10 +64,10 @@ Interval_of_pregnancy = st.sidebar.slider(label='Interval of pregnancy', min_val
                         value=80,
                         step=1)
 
-BISHOP = st.sidebar.number_input(label='BISHOP', min_value=1,
-                              max_value=30,
-                              value=3,
-                              step=1)
+BISHOP = st.sidebar.number_input(label='BISHOP', min_value=1.0,
+                              max_value=30.0,
+                              value=3.0,
+                              step=1.0)
 
 EFW = st.sidebar.number_input(label='EFW', min_value=0,
                               max_value=5000,
