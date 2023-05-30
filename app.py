@@ -9,8 +9,8 @@ st.set_page_config(page_title="vaginal birth", layout="wide")
 # 标题
 st.title('An  explainable machining learning model in predicting vaginal birth after cesarean section')
 
-st.markdown('_This is an online tool to predict the success of vaginal birth after cesarean section by using machining learning model._\
-         Please adjust the value of each feature. After that, click on the Predict button at the bottom to see the prediction._')
+st.markdown('This is an online tool to predict the success of vaginal birth after cesarean section by using machining learning model.\
+         Please adjust the value of each feature. After that, click on the Predict button at the bottom to see the prediction.')
 
 st.markdown('## Input Data:')
 # 隐藏底部水印
@@ -46,7 +46,7 @@ def option_name1(x):
         return 'postgraduate'
 
 # 导入模型
-model = joblib.load('cb5.pkl')
+model = joblib.load('cbEFW.pkl')
 
 st.sidebar.title("Features")
 
@@ -79,7 +79,7 @@ features = {'PREBMI': PREBMI,
             'Interval of pregnancy': Interval_of_pregnancy,
             'BISHOP': BISHOP,
             'EDUC': EDUC,
-            'CHILWEI': EFW,
+            'EFW': EFW,
             }
 
 features_df = pd.DataFrame([features])
