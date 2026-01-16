@@ -25,7 +25,7 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # 导入模型
-model = joblib.load('cb5.pkl')
+model = joblib.load('cbEFW.pkl')
 
 
 def predict_quality(model, df):
@@ -92,6 +92,7 @@ if st.button('Predict'):
     prediction = predict_quality(model, features_df)
     st.write("the probability of vaginal birth after cearean section:")
     st.success(round(prediction[0], 3))
+
 
 
 
