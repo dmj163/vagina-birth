@@ -46,7 +46,7 @@ def option_name1(x):
         return 'postgraduate'
 
 # 导入模型
-model = joblib.load('cbEFW.pkl')
+model = joblib.load('cb5.pkl')
 
 st.sidebar.title("Features")
 
@@ -91,3 +91,4 @@ if st.button('Predict'):
     prediction = predict_quality(model, features_df)
     st.write("the probability of vaginal birth after cearean section:")
     st.success(round(prediction[0], 3))
+
