@@ -1,2 +1,8 @@
-joblib == 1.5.3
+streamlit
+joblib
+catboost
+numpy
+scikit-learn
+pandas
+
 
